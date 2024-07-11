@@ -1,1 +1,5 @@
-homepage: "www.marketvision.ch"
+homepage: "https://marketvision.ch"
+documentation: "https://marketvision.ch/cookiedialog/"
+versions:
+  - sha: *
+    changeNotes: Initial release.
