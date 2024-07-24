@@ -238,7 +238,7 @@ if (consentModeEnabled !== false) {
         const consentRegionData = getConsentRegionData(regionObj);
 
         if (waitForUpdate > 0) {
-            consentRegionData.wait_for_update = waitForUpdate;
+            consentRegionData.wait_for_update = Math.max(500,waitForUpdate);
         }else{
             consentRegionData.wait_for_update = 2000;
 	}
