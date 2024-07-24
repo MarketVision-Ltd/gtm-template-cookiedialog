@@ -239,12 +239,13 @@ if (consentModeEnabled !== false) {
 
         if (waitForUpdate > 0) {
             consentRegionData.wait_for_update = waitForUpdate;
-        }
+        }else{
+            consentRegionData.wait_for_update = 2000;
+	}
 
         setDefaultConsentState(consentRegionData);
       
-        if (regionObj.region === undefined || regionObj.region.trim() === '')
-        {
+        if (regionObj.region === undefined || regionObj.region.trim() === ''){
           hasDefaultState = true;
         }
     });
@@ -258,7 +259,8 @@ if (consentModeEnabled !== false) {
         analytics_storage: 'denied',
         functionality_storage: 'denied',
         personalization_storage: 'denied',
-        security_storage: 'granted'
+        security_storage: 'granted',
+	wait_for_update: 2000
       });
     }
 
