@@ -2,7 +2,7 @@ homepage: "https://marketvision.ch"
 documentation: "https://marketvision.ch/cookiedialog/"
 versions:
   # Latest version
-  - sha: ee66316747bc1b49f54dae53792c01918c537a4f
+  - sha: d04870b5a291aed7449aa4e744f3078552a95dc7
     changeNotes: Fixed wait_for_update
   # Older versions
   - sha: c3811e2c77cb7d88673139cb20b8cd2ed98ac174
